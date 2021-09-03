@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Cadastro Alunos</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="mt-5">Cadastrar Alunos</h1>
+                <form action="/cadastrarAluno" method="POST">
+                    <div class="form-group">
+                        <label for="nome_aluno">Nome do Aluno</label>
+                        <input class="form-control" type="text" id="nome_aluno" name="nome_aluno" placeholder="Nome do Aluno">
+                    </div>
+                    <div class="form-group">
+                        <label for="nome_resp">Nome do Responsável</label>
+                        <input class="form-control" type="text" id="nome_resp" name="nome_resp" placeholder="Nome do Responsável" > 
+                    </div>
+                    <div class="form-group">
+                        <label for="contato">Contato</label>
+                        <input class="form-control" type="number" id="contato" name="contato" placeholder="(00)0000-00000" > 
+                    </div>
+                    <div class="form-group">
+                        <label for="end">Endereço</label>
+                        <input class="form-control" type="text" id="end" name="end" placeholder="Rua dos bobos, 00" > 
+                    </div>
+                    <div class="form-group">
+                        <label for="ra">Matrícula (RA)</label>
+                        <input class="form-control" type="number" id="ra" name="ra" placeholder="Matrícula" > 
+                    </div>
+                    <button class="btn btn-success mb-5" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
