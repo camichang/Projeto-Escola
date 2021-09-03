@@ -4,7 +4,7 @@ var mongoose = require("mongoose");
 const app = express();
 const port = 3000;
 
-mongoose.connect("mongodb+srv://camila_chang:camila_chang@cluster0.gcljv.mongodb.net/escola?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://usuario:senha@cluster0.gcljv.mongodb.net/escola?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.listen(port, ()=>{
     console.log("servidor na porta "+port)
